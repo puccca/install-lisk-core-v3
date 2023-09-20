@@ -52,7 +52,7 @@ npm install lisk-core@3.1.0-rc.0 -g
 npm list --global --depth=0
 ```
 
-## 5. Install pm2 & logrotate
+## 5. Install pm2 & pm2-logrotate
 ```shell
 npm i -g pm2
 pm2 install pm2-logrotate
