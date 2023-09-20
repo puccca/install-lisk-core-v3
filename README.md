@@ -1,4 +1,4 @@
-## This is a How to tutorial to install lisk-core v3.1.0 with npm on testnet network
+## How to install lisk-core v3.1.0 with npm on testnet network
 
 ## Install prerequisites
 ```shell
