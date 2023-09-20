@@ -1,6 +1,6 @@
-## How to install lisk-core v3.1.0 with npm on testnet network
+## 10 steps to install lisk-core v3.1.0 with npm on testnet network
 
-## Install prerequisites
+## 1. Install prerequisites
 ```shell
 sudo apt-get update
 sudo apt-get upgrade
@@ -10,7 +10,7 @@ sudo apt-get -y install wget tar zip unzip ufw npm git curl bash jq nodejs
 sudo apt install -y libtool automake autoconf curl build-essential python2-minimal
 ```
 
-## Firewall
+## 2. Firewall
 ```shell
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
@@ -24,56 +24,50 @@ sudo ufw allow "7887/tcp"
 ```shell
 sudo ufw allow "YOUR_SSH_PORT/tcp"
 ```
-
 **Activate firewall**
 ```shell
 sudo ufw --force enable
 sudo ufw status
 ```
-
 *Test a new connection after a system restart*
 ```shell
 sudo shutdown -r now
 ```
 
-## Install nvm
+## 3. Install nvm
 ```shell
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
-
 *Disconnect & make a new connection*
-
 ```shell
 nvm install 18.17.1
 ```
 
-## Install lisk-core v3.1.0 with npm
+## 4. Install lisk-core v3.1.0 with npm
 ```shell
 npm install lisk-core@3.1.0-rc.0 -g
 ```
-
 *Check lisk-core location*
 ```shell
 npm list --global --depth=0
 ```
 
-## Install pm2
+## 5. Install pm2
 ```shell
 npm i -g pm2
 ```
 
-## Start lisk core
+## 6. Start lisk core
 ```shell
 lisk-core start --network testnet
 ```
 
-## Create a new file
+## 7. Create a new file
 ```shell
 cd && nano core-start.json
 ```
 
 **Paste the following lines and save with CTRL+X+Y+Enter**
-
 ```shell
 {
   "name": "lisk-core",
@@ -84,21 +78,24 @@ cd && nano core-start.json
  }
 ```
 
-## Start & Stop lisk core
+## 8. Start & Stop lisk-core
 ```shell
 pm2 start core-start.json
 pm2 logs
 pm2 stop all
 ```
 
-## Import from snapshot
+## 9. Import from snapshot
 ```shell
 lisk-core blockchain:download --network testnet
 lisk-core blockchain:import blockchain.db.tar.gz --force
 ```
 
-## Start core
+## 10. Start lisk-core
 ```shell
 pm2 start core-start.json
 pm2 logs
 ```
+
+## P.S.
+This tutorial couldn't be possible without valuable advices and docs from gr33ndr4gon & punkrock & przemer.
