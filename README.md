@@ -97,5 +97,5 @@ pm2 start core-start.json
 pm2 logs
 ```
 
-## P.S.
+## P. S.
 This tutorial couldn't be possible without valuable advices and docs from gr33ndr4gon & punkrock & przemer.
