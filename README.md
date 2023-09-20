@@ -15,7 +15,7 @@ sudo apt install -y libtool automake autoconf curl build-essential python2-minim
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
-**Lisk testnet ports: 7001 for v3 and 7667 & 7887 for the migration to v4**
+**Lisk testnet ports: 7001 for core v3 and 7667 & 7887 for the migration to core v4**
 ```shell
 sudo ufw allow "7001/tcp"
 sudo ufw allow "7667/tcp"
