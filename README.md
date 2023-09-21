@@ -1,5 +1,10 @@
 ## 10 steps to install lisk-core v3.1.0 with npm on testnet network
 
+System requirements:
+- Ubuntu 20.04 LTS
+- 4GB RAM for core v3 and 16GB RAM for migration to core v4
+- Some basic configuration to secure the server (sudo user, public & private keys, change ssh port to access the server etc.)
+
 ## 1. Install prerequisites
 ```shell
 sudo apt-get update
