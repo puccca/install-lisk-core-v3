@@ -2,7 +2,7 @@
 
 System requirements:
 - Ubuntu 20.04 LTS
-- 4GB RAM for core v3 and 16GB RAM for migration to core v4
+- 4GB RAM
 - Some basic configuration to secure the server (sudo user, public & private keys, change ssh port to access the server etc.)
 
 ## 1. Install prerequisites
