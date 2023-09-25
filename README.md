@@ -1,4 +1,4 @@
-## 10 steps to install lisk-core v3.1.0 with npm on testnet network
+## 10 steps to install lisk-core v3.1.0-rc.1 with npm on testnet network
 
 System requirements:
 - Ubuntu 20.04 LTS
@@ -46,12 +46,12 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
 *Disconnect & make a new connection*
 ```shell
-nvm install 18.17.1
+nvm install 18
 ```
 
-## 4. Install lisk-core v3.1.0 with npm
+## 4. Install lisk-core v3.1.0-rc.1 with npm
 ```shell
-npm install lisk-core@3.1.0-rc.0 -g
+npm install lisk-core@3.1.0-rc.1 -g
 ```
 *Check lisk-core location*
 ```shell
