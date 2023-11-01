@@ -47,6 +47,8 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 *Disconnect & make a new connection*
 ```shell
 nvm install 18
+nvm alias default 18
+nvm use default
 ```
 
 ## 4. Install lisk-core v3.1.0-rc.1 with npm
